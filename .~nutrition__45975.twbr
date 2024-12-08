@@ -6,6 +6,8 @@
     <AccessibleZoneTabOrder />
     <AnimationOnByDefault />
     <AutoCreateAndUpdateDSDPhoneLayouts />
+    <BasicButtonObject />
+    <CollapsiblePane />
     <CustomReferenceLineTooltips />
     <IntuitiveSorting />
     <IntuitiveSorting_SP2 />
@@ -19,6 +21,7 @@
     <SortTagCleanup />
     <WindowsPersistSimpleIdentifiers />
     <WorksheetBackgroundTransparency />
+    <ZoneVisibilityControl />
   </document-format-change-manifest>
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
@@ -941,62 +944,10 @@
             <column-instance column='[above national pct (copy)_3235203036075118595]' derivation='User' name='[usr:above national pct (copy)_3235203036075118595:nk]' pivot='key' type='nominal' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[Action (Location Desc)]'>
-            <groupfilter function='union' user:ui-action-filter='[Action1_FD5F279A7B6F47459A0FC300E02CF163]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Alabama&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Alaska&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Arizona&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Arkansas&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;California&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Colorado&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Connecticut&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Delaware&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;District of Columbia&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Florida&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Georgia&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Hawaii&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Idaho&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Illinois&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Indiana&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Iowa&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Kansas&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Kentucky&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Louisiana&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Maine&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Maryland&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Massachusetts&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Michigan&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Minnesota&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Mississippi&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Missouri&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Montana&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Nebraska&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Nevada&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;New Hampshire&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;New Jersey&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;New Mexico&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;New York&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;North Carolina&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;North Dakota&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Ohio&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Oklahoma&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Oregon&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Pennsylvania&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Rhode Island&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;South Carolina&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;South Dakota&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Tennessee&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Texas&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Utah&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Vermont&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Virginia&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Washington&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;West Virginia&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Wisconsin&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Wyoming&quot;' />
-            </groupfilter>
+            <groupfilter function='level-members' level='[LocationDesc]' user:ui-action-filter='[Action1_FD5F279A7B6F47459A0FC300E02CF163]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:Question:nk]' context='true' filter-group='3'>
-            <groupfilter function='member' level='[none:Question:nk]' member='&quot;Percent of adults aged 18 years and older who have obesity&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:Question:nk]' member='&quot;Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:StratificationCategory1:nk]'>
             <groupfilter function='member' level='[none:StratificationCategory1:nk]' member='&quot;Age (years)&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
@@ -1090,63 +1041,11 @@
             </column-instance>
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[Action (Location Desc)]'>
-            <groupfilter function='union' user:ui-action-filter='[Action1_12D347545D034F9F98361D0725996999]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Alabama&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Alaska&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Arizona&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Arkansas&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;California&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Colorado&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Connecticut&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Delaware&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;District of Columbia&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Florida&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Georgia&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Hawaii&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Idaho&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Illinois&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Indiana&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Iowa&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Kansas&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Kentucky&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Louisiana&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Maine&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Maryland&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Massachusetts&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Michigan&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Minnesota&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Mississippi&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Missouri&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Montana&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Nebraska&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Nevada&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;New Hampshire&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;New Jersey&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;New Mexico&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;New York&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;North Carolina&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;North Dakota&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Ohio&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Oklahoma&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Oregon&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Pennsylvania&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Rhode Island&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;South Carolina&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;South Dakota&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Tennessee&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Texas&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Utah&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Vermont&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Virginia&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Washington&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;West Virginia&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Wisconsin&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Wyoming&quot;' />
-            </groupfilter>
+            <groupfilter function='level-members' level='[LocationDesc]' user:ui-action-filter='[Action1_12D347545D034F9F98361D0725996999]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <computed-sort column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:LocationDesc:nk]' direction='DESC' using='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[avg:Calculation_2394437279604166656:qk]' />
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:Question:nk]' context='true' filter-group='3'>
-            <groupfilter function='member' level='[none:Question:nk]' member='&quot;Percent of adults aged 18 years and older who have obesity&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:Question:nk]' member='&quot;Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <filter class='quantitative' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[rank:avg:Calculation_2394437279604166656:qk:1]' included-values='in-range'>
             <min>1</min>
@@ -1253,69 +1152,17 @@
             <column-instance column='[above national pct age (copy)_3235203036075569156]' derivation='User' name='[usr:above national pct age (copy)_3235203036075569156:nk]' pivot='key' type='nominal' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[Action (Location Desc)]'>
-            <groupfilter function='union' user:ui-action-filter='[Action1_FD5F279A7B6F47459A0FC300E02CF163]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Alabama&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Alaska&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Arizona&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Arkansas&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;California&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Colorado&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Connecticut&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Delaware&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;District of Columbia&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Florida&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Georgia&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Hawaii&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Idaho&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Illinois&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Indiana&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Iowa&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Kansas&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Kentucky&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Louisiana&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Maine&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Maryland&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Massachusetts&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Michigan&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Minnesota&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Mississippi&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Missouri&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Montana&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Nebraska&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Nevada&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;New Hampshire&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;New Jersey&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;New Mexico&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;New York&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;North Carolina&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;North Dakota&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Ohio&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Oklahoma&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Oregon&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Pennsylvania&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Rhode Island&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;South Carolina&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;South Dakota&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Tennessee&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Texas&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Utah&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Vermont&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Virginia&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Washington&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;West Virginia&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Wisconsin&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Wyoming&quot;' />
-            </groupfilter>
+            <groupfilter function='level-members' level='[LocationDesc]' user:ui-action-filter='[Action1_FD5F279A7B6F47459A0FC300E02CF163]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:Question:nk]' context='true' filter-group='3'>
-            <groupfilter function='member' level='[none:Question:nk]' member='&quot;Percent of adults aged 18 years and older who have obesity&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:Question:nk]' member='&quot;Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <manual-sort column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:Stratification1:nk]' direction='ASC'>
             <dictionary>
-              <bucket>&quot;College graduate&quot;</bucket>
-              <bucket>&quot;Some college or technical school&quot;</bucket>
-              <bucket>&quot;High school graduate&quot;</bucket>
               <bucket>&quot;Less than high school&quot;</bucket>
+              <bucket>&quot;High school graduate&quot;</bucket>
+              <bucket>&quot;Some college or technical school&quot;</bucket>
+              <bucket>&quot;College graduate&quot;</bucket>
             </dictionary>
           </manual-sort>
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:StratificationCategory1:nk]'>
@@ -1396,62 +1243,10 @@
             <column-instance column='[StratificationCategory1]' derivation='None' name='[none:StratificationCategory1:nk]' pivot='key' type='nominal' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[Action (Location Desc)]'>
-            <groupfilter function='union' user:ui-action-filter='[Action1_FD5F279A7B6F47459A0FC300E02CF163]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Alabama&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Alaska&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Arizona&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Arkansas&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;California&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Colorado&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Connecticut&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Delaware&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;District of Columbia&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Florida&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Georgia&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Hawaii&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Idaho&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Illinois&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Indiana&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Iowa&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Kansas&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Kentucky&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Louisiana&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Maine&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Maryland&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Massachusetts&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Michigan&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Minnesota&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Mississippi&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Missouri&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Montana&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Nebraska&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Nevada&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;New Hampshire&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;New Jersey&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;New Mexico&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;New York&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;North Carolina&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;North Dakota&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Ohio&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Oklahoma&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Oregon&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Pennsylvania&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Rhode Island&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;South Carolina&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;South Dakota&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Tennessee&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Texas&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Utah&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Vermont&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Virginia&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Washington&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;West Virginia&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Wisconsin&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Wyoming&quot;' />
-            </groupfilter>
+            <groupfilter function='level-members' level='[LocationDesc]' user:ui-action-filter='[Action1_FD5F279A7B6F47459A0FC300E02CF163]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:Question:nk]' context='true' filter-group='3'>
-            <groupfilter function='member' level='[none:Question:nk]' member='&quot;Percent of adults aged 18 years and older who have obesity&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:Question:nk]' member='&quot;Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:Stratification1:nk]'>
             <groupfilter function='level-members' level='[none:Stratification1:nk]' />
@@ -1563,7 +1358,7 @@
             </groupfilter>
           </filter>
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:Question:nk]' context='true' filter-group='3'>
-            <groupfilter function='member' level='[none:Question:nk]' member='&quot;Percent of adults aged 18 years and older who have obesity&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:Question:nk]' member='&quot;Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <shelf-sorts>
             <shelf-sort-v2 dimension-to-sort='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:Income:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[avg:Calculation_2394437279604166656:qk]' shelf='rows' />
@@ -1723,59 +1518,7 @@
             <column-instance column='[above national pct (copy)_3235203036079194118]' derivation='User' name='[usr:above national pct (copy)_3235203036079194118:nk]' pivot='key' type='ordinal' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[Action (Location Desc)]'>
-            <groupfilter function='union' user:ui-action-filter='[Action1_FD5F279A7B6F47459A0FC300E02CF163]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Alabama&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Alaska&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Arizona&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Arkansas&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;California&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Colorado&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Connecticut&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Delaware&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;District of Columbia&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Florida&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Georgia&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Hawaii&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Idaho&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Illinois&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Indiana&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Iowa&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Kansas&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Kentucky&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Louisiana&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Maine&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Maryland&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Massachusetts&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Michigan&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Minnesota&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Mississippi&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Missouri&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Montana&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Nebraska&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Nevada&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;New Hampshire&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;New Jersey&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;New Mexico&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;New York&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;North Carolina&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;North Dakota&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Ohio&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Oklahoma&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Oregon&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Pennsylvania&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Rhode Island&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;South Carolina&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;South Dakota&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Tennessee&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Texas&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Utah&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Vermont&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Virginia&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Washington&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;West Virginia&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Wisconsin&quot;' />
-              <groupfilter function='member' level='[LocationDesc]' member='&quot;Wyoming&quot;' />
-            </groupfilter>
+            <groupfilter function='level-members' level='[LocationDesc]' user:ui-action-filter='[Action1_FD5F279A7B6F47459A0FC300E02CF163]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:Income:nk]'>
             <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
@@ -1800,7 +1543,7 @@
             <groupfilter function='level-members' level='[none:LocationDesc:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:Question:nk]' context='true' filter-group='3'>
-            <groupfilter function='member' level='[none:Question:nk]' member='&quot;Percent of adults aged 18 years and older who have obesity&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:Question:nk]' member='&quot;Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:Question:nk]</column>
@@ -1936,6 +1679,7 @@
               <groupfilter function='member' level='[LocationDesc]' member='&quot;Oklahoma&quot;' />
               <groupfilter function='member' level='[LocationDesc]' member='&quot;Oregon&quot;' />
               <groupfilter function='member' level='[LocationDesc]' member='&quot;Pennsylvania&quot;' />
+              <groupfilter function='member' level='[LocationDesc]' member='&quot;Puerto Rico&quot;' />
               <groupfilter function='member' level='[LocationDesc]' member='&quot;Rhode Island&quot;' />
               <groupfilter function='member' level='[LocationDesc]' member='&quot;South Carolina&quot;' />
               <groupfilter function='member' level='[LocationDesc]' member='&quot;South Dakota&quot;' />
@@ -1943,6 +1687,7 @@
               <groupfilter function='member' level='[LocationDesc]' member='&quot;Texas&quot;' />
               <groupfilter function='member' level='[LocationDesc]' member='&quot;Utah&quot;' />
               <groupfilter function='member' level='[LocationDesc]' member='&quot;Vermont&quot;' />
+              <groupfilter function='member' level='[LocationDesc]' member='&quot;Virgin Islands&quot;' />
               <groupfilter function='member' level='[LocationDesc]' member='&quot;Virginia&quot;' />
               <groupfilter function='member' level='[LocationDesc]' member='&quot;Washington&quot;' />
               <groupfilter function='member' level='[LocationDesc]' member='&quot;West Virginia&quot;' />
@@ -1951,7 +1696,7 @@
             </groupfilter>
           </filter>
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:Question:nk]' context='true' filter-group='3'>
-            <groupfilter function='member' level='[none:Question:nk]' member='&quot;Percent of adults aged 18 years and older who have obesity&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:Question:nk]' member='&quot;Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:Question:nk]</column>
@@ -2061,7 +1806,7 @@
             </groupfilter>
           </filter>
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:Question:nk]' context='true' filter-group='3'>
-            <groupfilter function='member' level='[none:Question:nk]' member='&quot;Percent of adults aged 18 years and older who have obesity&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:Question:nk]' member='&quot;Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <computed-sort column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:Stratification1:nk]' direction='ASC' using='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[avg:Data_Value:qk]' />
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:StratificationCategory1:nk]'>
@@ -2134,7 +1879,7 @@
             <column-instance column='[Question]' derivation='None' name='[none:Question:nk]' pivot='key' type='nominal' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:Question:nk]' context='true' filter-group='3'>
-            <groupfilter function='member' level='[none:Question:nk]' member='&quot;Percent of adults aged 18 years and older who have obesity&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:Question:nk]' member='&quot;Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:Question:nk]</column>
@@ -2344,63 +2089,10 @@
           <filter class='quantitative' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[Latitude (generated)]' included-values='non-null' />
           <filter class='quantitative' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[Longitude (generated)]' included-values='non-null' />
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:LocationDesc:nk]'>
-            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Alabama&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Alaska&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Arizona&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Arkansas&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;California&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Colorado&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Connecticut&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Delaware&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;District of Columbia&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Florida&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Georgia&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Hawaii&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Idaho&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Illinois&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Indiana&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Iowa&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Kansas&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Kentucky&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Louisiana&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Maine&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Maryland&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Massachusetts&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Michigan&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Minnesota&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Mississippi&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Missouri&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Montana&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;National&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Nebraska&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Nevada&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;New Hampshire&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;New Jersey&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;New Mexico&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;New York&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;North Carolina&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;North Dakota&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Ohio&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Oklahoma&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Oregon&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Pennsylvania&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Rhode Island&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;South Carolina&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;South Dakota&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Tennessee&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Texas&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Utah&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Vermont&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Virginia&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Washington&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;West Virginia&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Wisconsin&quot;' />
-              <groupfilter function='member' level='[none:LocationDesc:nk]' member='&quot;Wyoming&quot;' />
-            </groupfilter>
+            <groupfilter function='level-members' level='[none:LocationDesc:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
           </filter>
           <filter class='categorical' column='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:Question:nk]' context='true' filter-group='3'>
-            <groupfilter function='member' level='[none:Question:nk]' member='&quot;Percent of adults aged 18 years and older who have obesity&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[none:Question:nk]' member='&quot;Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.0t1btnf1wlre7211ko6kz15nw2o4].[none:Question:nk]</column>
@@ -2411,6 +2103,10 @@
           <aggregation value='true' />
         </view>
         <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[Longitude (generated)]' field-type='quantitative' max='34563842.961964987' min='16782944.08695738' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0t1btnf1wlre7211ko6kz15nw2o4].[Latitude (generated)]' field-type='quantitative' max='11954741.692188084' min='430623.91490201961' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
           <style-rule element='cell'>
             <format attr='border-width' value='3' />
             <format attr='border-style' value='solid' />
@@ -2499,7 +2195,7 @@
                             <format attr='margin' value='4' />
                           </zone-style>
                         </zone>
-                        <zone h='27344' id='10' name='Education' w='40200' x='59000' y='71656'>
+                        <zone h='27344' id='10' name='Education' w='36000' x='63200' y='71656'>
                           <zone-style>
                             <format attr='border-color' value='#598ab2' />
                             <format attr='border-style' value='solid' />
@@ -2507,7 +2203,7 @@
                             <format attr='margin' value='4' />
                           </zone-style>
                         </zone>
-                        <zone h='27344' id='12' name='Gender' w='19390' x='39610' y='71656'>
+                        <zone h='27344' id='12' name='Gender' w='23590' x='39610' y='71656'>
                           <zone-style>
                             <format attr='border-color' value='#598ab2' />
                             <format attr='border-style' value='solid' />
@@ -2572,7 +2268,7 @@
             <format attr='background-color' value='#ffffff' />
           </zone-style>
         </zone>
-        <zone h='18125' id='25' is-centered='0' is-scaled='1' param='/Users/connerkhudaverdyan/Desktop/Conner Stuff/images/US_Department_of_Health_and_Human_Services_seal.svg' type-v2='bitmap' w='15600' x='84600' y='250'>
+        <zone h='18125' hidden-by-user='true' id='25' is-centered='0' is-scaled='1' param='/Users/connerkhudaverdyan/Desktop/Conner Stuff/images/US_Department_of_Health_and_Human_Services_seal.svg' type-v2='bitmap' w='15600' x='84600' y='250'>
           <zone-style>
             <format attr='border-color' value='#598ab2' />
             <format attr='border-style' value='solid' />
@@ -2598,6 +2294,13 @@
             <format attr='border-width' value='2' />
             <format attr='background-color' value='#ffffff' />
           </zone-style>
+        </zone>
+        <zone h='3000' id='63' type-v2='dashboard-object' w='2400' x='80600' y='250'>
+          <button action='' active-visual-state-index='1'>
+            <toggle-action>tabdoc:toggle-button-click-action window-id=&quot;{7DBE5BA3-364E-4E9A-A0B8-3BF8E32D2758}&quot; zone-id=&quot;63&quot; zone-ids=[25]</toggle-action>
+            <button-visual-state />
+            <button-visual-state />
+          </button>
         </zone>
       </zones>
       <devicelayouts>
@@ -3009,7 +2712,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='22' />
       <simple-id uuid='{7DBE5BA3-364E-4E9A-A0B8-3BF8E32D2758}' />
     </window>
     <window class='worksheet' name='Income (2)'>
