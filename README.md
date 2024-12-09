@@ -1,5 +1,5 @@
 # US-Nutrition-Analysis
-
+(Work in Progress)
 ## Introduction / Goal
 
 In this project I utilized Tableau and SQL to create visualizations and extract statistics to analyze the relationship between nutrition and features such as location, income, education, age, and gender. The goal of this analysis is to generate recommendations for companies that are tied to health and nutrition, such as gyms, nutrition and supplement retailers, and food vendors. 
@@ -65,7 +65,10 @@ Comparing the proportions of people with obesity and overweight classifications 
   
 
 ### Muscle-Strengthening Exercise 
+The following section pertains to the question which asks if adults partake in muscle-strengthening exercises for 2 or more days a week. 
 
+#### Location
+- The proportions are fairly constant across the US, with slightly less percentage in the midwest and south
 ### Aerobic Exercise
   
 
